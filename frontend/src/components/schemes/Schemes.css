@@ -1,0 +1,388 @@
+/* Schemes Section Styles */
+.schemes-section {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.schemes-controls-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.schemes-search-box {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.schemes-search-input {
+  width: 100%;
+  padding: 0.95rem 1.25rem 0.95rem 3.25rem;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  transition: all var(--transition-normal);
+}
+
+.schemes-search-input:focus {
+  background: #ffffff;
+  border-color: var(--color-primary-600);
+  box-shadow: 0 0 0 4px rgba(82, 183, 136, 0.15);
+}
+
+.clear-search {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.clear-search:hover {
+  color: var(--text-primary);
+}
+
+/* Quick Eligibility Banner */
+.eligibility-quick-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--color-primary-50);
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-green);
+}
+
+.cta-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary-900);
+}
+
+.cta-sparkle {
+  color: var(--color-harvest-amber);
+}
+
+.btn-check-eligibility {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--color-primary-700);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+}
+
+.btn-check-eligibility:hover {
+  background: var(--color-primary-800);
+  transform: scale(1.02);
+}
+
+/* Category Pills */
+.schemes-category-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  scrollbar-width: none;
+}
+
+.schemes-category-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-pill {
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.cat-pill:hover {
+  background: var(--color-primary-50);
+  color: var(--color-primary-800);
+  border-color: var(--color-primary-300);
+}
+
+.cat-pill.active {
+  background: var(--color-primary-800);
+  color: #ffffff;
+  border-color: var(--color-primary-800);
+  box-shadow: 0 4px 12px rgba(27, 67, 50, 0.2);
+}
+
+/* Schemes Grid */
+.schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.scheme-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  padding: 1.85rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.scheme-card:hover {
+  border-color: var(--color-primary-400);
+  box-shadow: 0 15px 35px -5px rgba(27, 67, 50, 0.12);
+}
+
+.scheme-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.scheme-category-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary-700);
+  background: var(--color-primary-50);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-green);
+  text-transform: uppercase;
+}
+
+.scheme-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.scheme-badge.popular {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.scheme-badge.essential {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.scheme-badge.high-subsidy {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.scheme-badge.recommended {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.scheme-badge.tech-subsidy {
+  background: #fae8ff;
+  color: #86198f;
+}
+
+.scheme-badge.eco-friendly {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.scheme-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primary-900);
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+.scheme-dept {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* Benefit Box */
+.scheme-benefit-box {
+  background: linear-gradient(135deg, var(--color-primary-50) 0%, #ffffff 100%);
+  border: 1px solid var(--color-primary-200);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.benefit-val {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--color-primary-800);
+  line-height: 1.1;
+}
+
+.benefit-period {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+.scheme-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.scheme-eligibility-preview {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-subtle);
+  margin-bottom: 1.25rem;
+}
+
+.eligibility-title {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.scheme-eligibility-preview ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.scheme-eligibility-preview li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+}
+
+.check-bullet {
+  color: var(--color-primary-500);
+  min-width: 14px;
+  margin-top: 2px;
+}
+
+.scheme-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.deadline-badge {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.deadline-badge strong {
+  color: var(--color-primary-800);
+}
+
+.btn-apply-scheme {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--color-primary-700);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+}
+
+.btn-apply-scheme:hover {
+  background: var(--color-primary-800);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(27, 67, 50, 0.25);
+}
+
+/* No Schemes Found */
+.no-schemes-found {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  border: 1px dashed var(--border-subtle);
+}
+
+.no-found-icon {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.no-schemes-found h3 {
+  font-size: 1.35rem;
+  color: var(--color-primary-900);
+  margin-bottom: 0.5rem;
+}
+
+.no-schemes-found p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .schemes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .schemes-grid {
+    grid-template-columns: 1fr;
+  }
+  .schemes-controls-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .eligibility-quick-cta {
+    justify-content: space-between;
+  }
+}

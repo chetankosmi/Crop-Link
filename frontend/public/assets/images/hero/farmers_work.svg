@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="farmSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b4332"/>
+      <stop offset="40%" stop-color="#2d6a4f"/>
+      <stop offset="80%" stop-color="#52b788"/>
+      <stop offset="100%" stop-color="#d8f3dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#farmSky)"/>
+  <!-- Field hills -->
+  <path d="M0 600 Q480 500 960 560 T1920 540 L1920 1080 L0 1080 Z" fill="#2d6a4f"/>
+  <path d="M0 700 Q540 620 1080 670 T1920 640 L1920 1080 L0 1080 Z" fill="#1b4332"/>
+  <path d="M0 820 Q400 760 900 810 T1920 780 L1920 1080 L0 1080 Z" fill="#081c15"/>
+  <!-- Farmer silhouette with traditional turban / pagri holding grain stalk -->
+  <g fill="#d8f3dc" opacity="0.85">
+    <circle cx="860" cy="590" r="26"/>
+    <path d="M840 580 C840 560, 880 560, 880 580 Z"/>
+    <path d="M830 620 L890 620 L900 720 L820 720 Z"/>
+    <path d="M830 720 L845 830 L855 830 L850 720 Z"/>
+    <path d="M870 720 L865 830 L875 830 L885 720 Z"/>
+    <!-- Farm implement / tool in hand -->
+    <line x1="880" y1="630" x2="930" y2="780" stroke="#d8f3dc" stroke-width="4"/>
+  </g>
+  <g fill="#95d5b2" opacity="0.65">
+    <circle cx="1060" cy="610" r="24"/>
+    <path d="M1035 640 L1085 640 L1095 730 L1025 730 Z"/>
+    <path d="M1035 730 L1045 820 L1055 820 L1050 730 Z"/>
+    <path d="M1070 730 L1065 820 L1075 820 L1080 730 Z"/>
+  </g>
+</svg>

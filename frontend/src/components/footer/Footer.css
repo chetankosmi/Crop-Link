@@ -1,0 +1,317 @@
+/* Footer Styles */
+.footer-container {
+  background: #061510;
+  color: #ffffff;
+  position: relative;
+  border-top: 1px solid rgba(82, 183, 136, 0.2);
+}
+
+/* Newsletter Bar */
+.footer-newsletter-bar {
+  background: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-800) 100%);
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(82, 183, 136, 0.25);
+}
+
+.newsletter-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.newsletter-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.newsletter-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-primary-200);
+}
+
+.newsletter-form-col {
+  min-width: 380px;
+}
+
+.newsletter-input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.4rem 0.35rem 1.25rem;
+  transition: all var(--transition-fast);
+}
+
+.newsletter-input-group:focus-within {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: var(--color-primary-400);
+}
+
+.newsletter-field {
+  flex: 1;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.newsletter-field::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-btn {
+  padding: 0.65rem 1.4rem;
+  font-size: 0.9rem;
+}
+
+.subscribed-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(34, 197, 94, 0.2);
+  color: #86efac;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Main Footer Content */
+.footer-main-content {
+  padding-top: 4.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.9fr 1.1fr;
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Brand Column */
+.footer-brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-logo-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-800) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.brand-tag {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: var(--color-primary-400);
+}
+
+.footer-brand-desc {
+  font-size: 0.9rem;
+  color: var(--text-on-dark-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-kisan-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(82, 183, 136, 0.3);
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+}
+
+.kisan-phone-icon {
+  color: var(--color-harvest-amber);
+}
+
+.kisan-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-on-dark-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kisan-number {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: #fef08a;
+  letter-spacing: 0.04em;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.social-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all var(--transition-fast);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-icon:hover {
+  background: var(--color-primary-600);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Link Columns */
+.footer-col-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-link {
+  font-size: 0.88rem;
+  color: var(--text-on-dark-muted);
+  transition: all var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* Contact Column */
+.footer-contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.f-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text-on-dark-muted);
+  line-height: 1.45;
+}
+
+.f-icon {
+  color: var(--color-primary-400);
+  min-width: 18px;
+  margin-top: 2px;
+}
+
+.footer-cert-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--color-primary-300);
+  background: rgba(82, 183, 136, 0.1);
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(82, 183, 136, 0.25);
+}
+
+.cert-icon {
+  color: var(--color-primary-400);
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: var(--text-on-dark-muted);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legal-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.legal-links a:hover {
+  color: #ffffff;
+}
+
+.dot-sep {
+  opacity: 0.4;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .newsletter-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter-form-col {
+    width: 100%;
+    min-width: unset;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+}

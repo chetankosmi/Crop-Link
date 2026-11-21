@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d6a4f"/>
+      <stop offset="40%" stop-color="#40916c"/>
+      <stop offset="70%" stop-color="#74c69d"/>
+      <stop offset="100%" stop-color="#95d5b2"/>
+    </linearGradient>
+    <linearGradient id="hillGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b4332"/>
+      <stop offset="100%" stop-color="#081c15"/>
+    </linearGradient>
+    <linearGradient id="paddyGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#52b788"/>
+      <stop offset="50%" stop-color="#2d6a4f"/>
+      <stop offset="100%" stop-color="#1b4332"/>
+    </linearGradient>
+    <linearGradient id="waterGleam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#95d5b2" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#d8f3dc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#95d5b2" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#skyGrad1)"/>
+  <!-- Sun / Horizon glow -->
+  <circle cx="960" cy="460" r="280" fill="#d8f3dc" opacity="0.3"/>
+  <circle cx="960" cy="460" r="140" fill="#f0fdf4" opacity="0.5"/>
+  <!-- Distant misty mountains -->
+  <path d="M0 580 Q320 460 640 520 T1280 480 Q1600 450 1920 540 L1920 1080 L0 1080 Z" fill="#2d6a4f" opacity="0.7"/>
+  <path d="M0 640 Q380 540 820 600 T1500 570 Q1750 550 1920 620 L1920 1080 L0 1080 Z" fill="url(#hillGrad1)" opacity="0.9"/>
+  <!-- Terraced Paddy fields curves -->
+  <path d="M0 720 C400 680, 800 780, 1200 720 C1600 660, 1800 750, 1920 740 L1920 1080 L0 1080 Z" fill="url(#paddyGrad1)"/>
+  <path d="M0 830 C500 790, 950 890, 1400 820 C1700 770, 1850 840, 1920 830 L1920 1080 L0 1080 Z" fill="#1b4332"/>
+  <path d="M0 920 C420 890, 880 970, 1320 910 C1680 870, 1820 940, 1920 930 L1920 1080 L0 1080 Z" fill="#081c15"/>
+  <!-- Water irrigation channels reflection -->
+  <path d="M0 810 C480 770, 900 870, 1380 800 C1680 750, 1850 820, 1920 810" stroke="url(#waterGleam)" stroke-width="8" fill="none" opacity="0.8"/>
+  <path d="M0 900 C400 870, 860 950, 1300 890 C1660 850, 1800 920, 1920 910" stroke="url(#waterGleam)" stroke-width="12" fill="none" opacity="0.7"/>
+  <!-- Rice crop stalks pattern across field -->
+  <g stroke="#74c69d" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <path d="M300 860 L295 820 M305 860 L315 825 M300 860 L300 810"/>
+    <path d="M520 890 L515 850 M525 890 L535 855 M520 890 L520 840"/>
+    <path d="M780 870 L775 830 M785 870 L795 835 M780 870 L780 820"/>
+    <path d="M1050 910 L1045 870 M1055 910 L1065 875 M1050 910 L1050 860"/>
+    <path d="M1420 880 L1415 840 M1425 880 L1435 845 M1420 880 L1420 830"/>
+    <path d="M1680 920 L1675 880 M1685 920 L1695 885 M1680 920 L1680 870"/>
+  </g>
+</svg>

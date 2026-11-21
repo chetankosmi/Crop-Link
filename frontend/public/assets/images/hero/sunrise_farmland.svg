@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sunriseSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b4332"/>
+      <stop offset="30%" stop-color="#2d6a4f"/>
+      <stop offset="60%" stop-color="#d97706"/>
+      <stop offset="85%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <linearGradient id="goldenField" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b4332"/>
+      <stop offset="50%" stop-color="#2d6a4f"/>
+      <stop offset="100%" stop-color="#081c15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sunriseSky)"/>
+  <!-- Rising Sun with rays -->
+  <circle cx="960" cy="540" r="160" fill="#fef08a" opacity="0.9"/>
+  <circle cx="960" cy="540" r="320" fill="#fde047" opacity="0.35"/>
+  <circle cx="960" cy="540" r="500" fill="#fef3c7" opacity="0.2"/>
+  <!-- Rolling green and golden farmland contours -->
+  <path d="M0 640 Q480 560 960 620 T1920 600 L1920 1080 L0 1080 Z" fill="#2d6a4f" opacity="0.85"/>
+  <path d="M0 740 Q580 660 1160 720 T1920 690 L1920 1080 L0 1080 Z" fill="url(#goldenField)"/>
+  <path d="M0 860 Q400 810 900 850 T1920 830 L1920 1080 L0 1080 Z" fill="#081c15"/>
+  <!-- Windmill / solar silhouette on distant ridge -->
+  <g transform="translate(1450, 480)" stroke="#1b4332" stroke-width="4">
+    <line x1="50" y1="50" x2="50" y2="160"/>
+    <line x1="50" y1="50" x2="20" y2="10"/>
+    <line x1="50" y1="50" x2="80" y2="10"/>
+    <line x1="50" y1="50" x2="50" y2="90"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d6a4f"/>
+      <stop offset="60%" stop-color="#1b4332"/>
+      <stop offset="100%" stop-color="#081c15"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#52b788"/>
+      <stop offset="100%" stop-color="#b7e4c7"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Subtle agricultural background landscape contours -->
+  <path d="M0 420 Q200 350 400 390 T800 360 L800 600 L0 600 Z" fill="#2d6a4f" opacity="0.4"/>
+  <path d="M0 480 Q250 420 500 460 T800 440 L800 600 L0 600 Z" fill="#1b4332" opacity="0.6"/>
+  <path d="M0 540 Q300 500 600 530 T800 510 L800 600 L0 600 Z" fill="#081c15" opacity="0.8"/>
+
+  <!-- Icon Circle -->
+  <g transform="translate(400, 230)" filter="url(#cardShadow)">
+    <circle cx="0" cy="0" r="75" fill="#f0fdf4" stroke="#52b788" stroke-width="4"/>
+    <g transform="translate(-40, -40) scale(1)">
+      <path d="M40 10 C20 40 15 55 15 65 A25 25 0 0 0 65 65 C65 55 60 40 40 10 Z" fill="#2d6a4f"/><path d="M30 48 Q40 60 50 48" stroke="#52b788" stroke-width="4" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Title & Subtitle text -->
+  <text x="400" y="380" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="34" fill="#f0fdf4" text-anchor="middle">IoT Soil & Water Telemetry</text>
+  <text x="400" y="425" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="500" font-size="20" fill="#b7e4c7" text-anchor="middle">Automated Valve Controller</text>
+  <rect x="340" y="455" width="120" height="4" rx="2" fill="url(#accent)"/>
+</svg>
